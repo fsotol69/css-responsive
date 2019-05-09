@@ -1,3 +1,219 @@
 body {
   background: #f9f9f9;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: grey;
 }
+
+.logo {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 600;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: crimson;
+  text-align: center;
+  line-height: 4rem;
+  flex-shrink: 0;
+}
+
+.icone{
+  flex-shrink: 0;
+  margin: 0.2rem ;
+}
+
+.icone.lupa {
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 0.2rem solid rgb(228, 228, 228);
+  border-radius: 50%;
+  position: relative;
+}
+
+.icone.lupa:after {
+  position: absolute;
+  width: 1rem;
+  height: 0.2rem;
+  background-color: rgb(228, 228, 228);
+  display: block;
+  content: "";
+  top: 50%;
+  left: 50%;
+  
+  transform: rotate(45deg);
+  transform-origin: -.15rem .8rem;
+  
+}
+
+header {
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: ghostwhite;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 40rem;
+  height: 2rem;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  margin: 1rem 2rem;
+  padding: 0.5rem;
+  background-color: ghostwhite;
+}
+
+.search input{
+  background-color: ghostwhite;
+  border-style: none;
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: grey;
+  width: 80%;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  height: 5rem;
+}
+
+header nav:nth-child(1) {
+  display: flex;
+}
+
+a {
+  line-height: 4rem;
+  text-decoration: none;
+  color: grey;
+  font-size: 1.2rem;
+  padding: 0.25rem 1rem;
+}
+
+.menu {
+  flex-shrink: 0;
+}
+
+.puntos {
+  width: 28px;
+  height: 28px;
+  margin: 1em;
+  background-color: #fff;
+}
+
+.accesos-puntos {
+  visibility: hidden;
+}
+
+.puntos:after,
+.puntos:before,
+.puntos div {
+  background-color: grey;
+  border-radius: 3px;
+  content: '';
+  /* display: inline-block; */
+  float: left;
+  height: 4px;
+  width: 4px;
+  margin-top: 12px;
+  margin-left: 4px;
+}
+
+.logging {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+#login {
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  background: #f9f9f9;
+  color: black;
+  border: 1px solid gainsboro;
+  line-height: 2.5rem;
+  margin: 0 .5rem;
+}
+
+#signup {
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+  background-color: crimson;
+  border: 1px solid crimson;
+  line-height: 2.5rem;
+}
+
+@media only screen and (max-width: 764px) {
+  .menu{
+    visibility: hidden;
+  }
+
+  .puntos{
+    order: -1;
+  }
+
+  .search {
+    border-style: none;
+  }
+
+  .search input{
+    visibility: hidden;
+  }
+
+  aside{
+    visibility: hidden;
+  }
+
+/* .puntos div {
+  background-color: orange;
+}
+
+.puntos:after{
+  background-color: red;
+}
+
+.puntos:before{
+  background-color: blue;
+} */
+
+/* .nav-icon {
+  margin: 1em;
+  width: 40px;
+}
+
+.nav-icon:after, 
+.nav-icon:before, 
+.nav-icon div {
+  background-color: #fff;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all .2s ease-in-out;
+}
+
+.nav-icon:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.nav-icon:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.nav-icon:hover div {
+  transform: scale(0);
+} */

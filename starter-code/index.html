@@ -4,55 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <div class="logo">P</div>
-      <input type="text" value="Discover your next favourite thing..." />
+      <div class="search">
+        <div class="icone lupa"></div>
+        <input type="text" value="Discover your next favourite thing..." />
+      </div>
       <nav>
-        <div>
+        <div class="menu">
           <a href="#">Ask</a>
           <a href="#">Ship</a>
           <a href="#">Makers</a>
           <a href="#">Jobs</a>
           <a href="#">Events</a>
-          <a href="#">Upcomming</a>
-          <a href="#">Collections</a>
-          <a href="#">Topics</a>
-          <a href="#">Live chats</a>
-          <a href="#">Newsletter</a>
-          <a href="#">Time travel</a>
-          <a href="#">Promoted jobs</a>
-          <a href="#">Promoted products</a>
         </div>
-        <div>
-          <a href="#">Apps</a>
+        <div class="puntos">
+          <div></div>
         </div>
-        <div>
-          <a href="#">About</a>
-          <a href="#">Branding</a>
-          <a href="#">Faq</a>
-          <a href="#">Pro tips</a>
-          <a href="#">Terms of service</a>
-          <a href="#">Privacy policy</a>
-          <a href="#">Cookie policy</a>
-        </div>
-        <div>
-          <a href="#">Blog</a>
-          <a href="#">Radio</a>
+        <div class="accesos-puntos">
+          <div>
+            <a href="#">Upcomming</a>
+            <a href="#">Collections</a>
+            <a href="#">Topics</a>
+            <a href="#">Live chats</a>
+            <a href="#">Newsletter</a>
+            <a href="#">Time travel</a>
+            <a href="#">Promoted jobs</a>
+            <a href="#">Promoted products</a>
+          </div>
+          <div>
+            <a href="#">Apps</a>
+          </div>
+          <div>
+            <a href="#">About</a>
+            <a href="#">Branding</a>
+            <a href="#">Faq</a>
+            <a href="#">Pro tips</a>
+            <a href="#">Terms of service</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Cookie policy</a>
+          </div>
+          <div>
+            <a href="#">Blog</a>
+            <a href="#">Radio</a>
+          </div>
         </div>
       </nav>
-      <div class="loggin">
-        <button>LOG IN</button>
-        <button>SIGN UP</button>
+      <div class="logging">
+        <button id="login">LOG IN</button>
+        <button id="signup">SIGN UP</button>
       </div>
     </header>
     <main>
-      <section>
-        <h1>Popular this month</h1>
+      <section class="most-popular-week">
+        <h1>Popular this week</h1>
+        <article>
+          <img src="#" alt="iamgen" />
+          <h2>Item</h2>
+          <p>Short item description.</p>
+          <div class="innerlinks">
+            <a href="#">99</a>
+            <a href="#"><img src="#" alt=""/></a>
+            <a href="#">Topic</a>
+          </div>
+          <div class="vote">
+            <div id="arrow"></div>
+            <div>666</div>
+          </div>
+        </article>
+      </section>
+      <section class="most-popular-today">
+        <h1>Popular this week</h1>
         <article>
           <img src="#" alt="iamgen" />
           <h2>Item</h2>
@@ -69,5 +96,35 @@
         </article>
       </section>
     </main>
+    <aside>
+      <section class="highlighted-app">
+        <h2>Item</h2>
+        <p>Short item description.</p>
+        <button class="add-app">ADD KITTYBOT TO SLACK</button>
+      </section>
+      <section class="live-chats">
+        <h1>UPCOMING LIVE CHATS</h1>
+        <article>
+          <img src="#" alt="iamgen" />
+          <h2>name</h2>
+          <p>activity</p>
+          <button class="remind-me">REMIND ME</button>
+        </article>
+        <button class="see-more">SEE MORE</button>
+      </section>
+      <section class="tweets">
+        <h1>TWEETS</h1>
+        <article>
+          <img src="#" alt="iamgen" />
+          <h2>name</h2>
+          <p>activity</p>
+          <button class="remind-me">REMIND ME</button>
+        </article>
+        <button class="see-more">SEE MORE</button>
+      </section>
+    </aside>
+    <footer>
+      <div class="chat"></div>
+    </footer>
   </body>
 </html>
