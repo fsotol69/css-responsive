@@ -10,121 +10,97 @@
   </head>
   <body>
     <header>
-      <div class="logo">P</div>
-      <div class="search">
-        <div class="icone lupa"></div>
-        <input type="text" value="Discover your next favourite thing..." />
-      </div>
-      <nav>
-        <div class="menu">
-          <a href="#">Ask</a>
-          <a href="#">Ship</a>
-          <a href="#">Makers</a>
-          <a href="#">Jobs</a>
-          <a href="#">Events</a>
+      <section id="superior">
+        <div class="logo">P</div>
+        <div class="search">
+          <div class="icone lupa"></div>
+          <input type="text" value="Discover your next favourite thing..." />
         </div>
         <div class="puntos">
           <div></div>
         </div>
-        <div class="accesos-puntos">
-          <div>
-            <a href="#">Upcomming</a>
-            <a href="#">Collections</a>
-            <a href="#">Topics</a>
-            <a href="#">Live chats</a>
-            <a href="#">Newsletter</a>
-            <a href="#">Time travel</a>
-            <a href="#">Promoted jobs</a>
-            <a href="#">Promoted products</a>
-          </div>
-          <div>
-            <a href="#">Apps</a>
-          </div>
-          <div>
-            <a href="#">About</a>
-            <a href="#">Branding</a>
-            <a href="#">Faq</a>
-            <a href="#">Pro tips</a>
-            <a href="#">Terms of service</a>
-            <a href="#">Privacy policy</a>
-            <a href="#">Cookie policy</a>
-          </div>
-          <div>
-            <a href="#">Blog</a>
-            <a href="#">Radio</a>
-          </div>
+        <button id="login">Login</button>
+      </section>
+      <section id="inferior"></section>
+      <nav>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">Tech</a>
+          <a href="#">Games</a>
+          <a href="#">Podcasts</a>
+          <a href="#">Books</a>
+          <a href="#">Bots</a>
+          <a href="#">Developer Tools</a>
+          <a href="#">iMessage Apps</a>
+          <a href="#">iPhone</a>
+          <a href="#">Photography Tools</a>
         </div>
-      </nav>
-      <div class="logging">
-        <button id="login">LOG IN</button>
-        <button id="signup">SIGN UP</button>
-      </div>
     </header>
-    <main>
-      <section class="most-popular-week">
-        <h1>Popular this week</h1>
-        <article>
-          <img src="#" alt="iamgen" />
+    <div class="contenedor">
+      <main>
+        <section class="welcome">
+          <img src="" alt="aplause" id="hands">
+          <h3>Welcome to Product Hunt</h3>
+          <p>Get the best new products in your inbox daily.</p>
+          <input class="email" type="text" value="Your email" />
+          <div class="subscribe">SUBSCRIBE</div>
+          <button id="close">x</button>
+        </section>
+        <section class="most-popular-week">
+          <article class="section-name">
+              <h3>Popular this week</h3>
+              <button id="close">x</button>  
+          </article>
+          <article class="app">
+              <img src="/images/popular-this-week/app-1.png" alt="imagen" />
+              <div class="info-app">
+                  <h3>Item</h3>
+                  <p>Short item description.</p>   
+                  <div class="numbers">
+                      <div class="likes">
+                          <span>
+                          <img src="/images/votes.png" alt="arrow">
+                          666</span>
+                        </div>
+                        <div class="comments">
+                            <span><img src="/images/comments.png" alt="arrow">
+                            66</span>
+                          </div>
+                  </div>
+              </div>
+            </article>
+        </section>
+      </main>
+      <aside>
+        <section class="highlighted-app">
           <h2>Item</h2>
           <p>Short item description.</p>
-          <div class="innerlinks">
-            <a href="#">99</a>
-            <a href="#"><img src="#" alt=""/></a>
-            <a href="#">Topic</a>
-          </div>
-          <div class="vote">
-            <div id="arrow"></div>
-            <div>666</div>
-          </div>
-        </article>
-      </section>
-      <section class="most-popular-today">
-        <h1>Popular this week</h1>
-        <article>
-          <img src="#" alt="iamgen" />
-          <h2>Item</h2>
-          <p>Short item description.</p>
-          <div class="innerlinks">
-            <a href="#">99</a>
-            <a href="#"><img src="#" alt=""/></a>
-            <a href="#">Topic</a>
-          </div>
-          <div class="vote">
-            <div id="arrow"></div>
-            <div>666</div>
-          </div>
-        </article>
-      </section>
-    </main>
-    <aside>
-      <section class="highlighted-app">
-        <h2>Item</h2>
-        <p>Short item description.</p>
-        <button class="add-app">ADD KITTYBOT TO SLACK</button>
-      </section>
-      <section class="live-chats">
-        <h1>UPCOMING LIVE CHATS</h1>
-        <article>
-          <img src="#" alt="iamgen" />
-          <h2>name</h2>
-          <p>activity</p>
-          <button class="remind-me">REMIND ME</button>
-        </article>
-        <button class="see-more">SEE MORE</button>
-      </section>
-      <section class="tweets">
-        <h1>TWEETS</h1>
-        <article>
-          <img src="#" alt="iamgen" />
-          <h2>name</h2>
-          <p>activity</p>
-          <button class="remind-me">REMIND ME</button>
-        </article>
-        <button class="see-more">SEE MORE</button>
-      </section>
-    </aside>
-    <footer>
-      <div class="chat"></div>
-    </footer>
+          <button class="add-app">ADD KITTYBOT TO SLACK</button>
+        </section>
+        <section class="live-chats">
+          <h1>UPCOMING LIVE CHATS</h1>
+          <article>
+            <img src="#" alt="imagen" />
+            <h2>name</h2>
+            <p>activity</p>
+            <button class="remind-me">REMIND ME</button>
+          </article>
+          <button class="see-more">SEE MORE</button>
+        </section>
+        <section class="tweets">
+          <h1>TWEETS</h1>
+          <article>
+            <img src="#" alt="imagen" />
+            <h2>name</h2>
+            <p>activity</p>
+            <button class="remind-me">REMIND ME</button>
+          </article>
+          <button class="see-more">SEE MORE</button>
+        </section>
+      </aside>
+      <footer>
+        <div class="chat"></div>
+      </footer>
+    </div>
   </body>
 </html>
