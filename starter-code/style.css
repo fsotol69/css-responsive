@@ -5,13 +5,13 @@
 }
 
 body {
-  background-image: url('/capturas/LG.png');
+  background-image: url('capturas/LG.png');
   background-repeat: no-repeat;
   background-size: cover;
   /* background: #f9f9f9; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #b9b9b9;
-  opacity: 0.3;
+  /* opacity: 0.3; */
   font-size: 100%;
 }
 
@@ -118,10 +118,12 @@ nav a img {
 }
 
 main {
-  width: 71%;
-  margin: 1rem;
+  float: left;
+  width: 74%;
+  margin: 1rem auto;
   border: 2px solid red;
 }
+
 /* Welcome */
 .contenedor .welcome {
   height: 3rem;
@@ -130,7 +132,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 0.2rem 0.2rem 0.2rem 3rem;
-  margin: 1rem ;
+  margin: 1rem;
   background-color: green;
   line-height: 3rem;
 }
@@ -228,14 +230,6 @@ article.app {
   padding: 1rem 0;
   width: 100%;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-
-.info-app {
-  padding: 1rem 0;
-  width: 100%;
-  display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
 }
@@ -310,6 +304,57 @@ button.show-more {
   vertical-align: middle;
   padding: 0;
   margin-right: 2rem;
+}
+
+/* Aside Section */
+aside {
+  float: right;
+  width: 20%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 2px solid red;
+}
+
+.highlighted-app, .live-chats .tweets{
+  padding: 1rem;
+  border: 2px solid red;
+  margin-bottom: 1rem;
+}
+
+.live-chats{
+  height: 40rem;
+  overflow: hidden;
+}
+
+.tweets{
+  height: 15rem;
+  overflow: scroll;
+}
+
+.round-photo{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.add-app, .remind-me {
+  height: 1.5rem;
+  width: 100%;
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  background-color: #da552f;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.info-user {
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 764px) {
